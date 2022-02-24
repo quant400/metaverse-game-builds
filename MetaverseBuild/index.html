@@ -28,11 +28,11 @@
          </div>
       </div>
       <script>var buildUrl = "Build";
-         var loaderUrl = buildUrl + "/buildFolder.loader.js";
+         var loaderUrl = buildUrl + "/MetaverseBuild.loader.js";
          var config = {
-           dataUrl: buildUrl + "/buildFolder.data.gz",
-           frameworkUrl: buildUrl + "/buildFolder.framework.js.gz",
-           codeUrl: buildUrl + "/buildFolder.wasm.gz",
+           dataUrl: buildUrl + "/MetaverseBuild.data.gz",
+           frameworkUrl: buildUrl + "/MetaverseBuild.framework.js.gz",
+           codeUrl: buildUrl + "/MetaverseBuild.wasm.gz",
            streamingAssetsUrl: "StreamingAssets",
            companyName: "DefaultCompany",
            productName: "CFC_Metaverse",
@@ -66,9 +66,9 @@
          script.src = loaderUrl;
          script.onload = () => {
            createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/buildFolder.data.gz",
-        frameworkUrl: "Build/buildFolder.framework.js.gz",
-        codeUrl: "Build/buildFolder.wasm.gz",
+        dataUrl: "Build/MetaverseBuild.data.gz",
+        frameworkUrl: "Build/MetaverseBuild.framework.js.gz",
+        codeUrl: "Build/MetaverseBuild.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CFC_Metaverse",
